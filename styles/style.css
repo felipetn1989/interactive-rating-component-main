@@ -128,7 +128,7 @@ body {
 }
 
 .grade {
-  display: none;
+  /* display: none; */
 }
 
 form {
@@ -145,7 +145,7 @@ label {
   text-align: center;
 }
 
-.button {
+#sub_button {
   background-color: var(--Orange);
   border: none;
   color: var(--White);
