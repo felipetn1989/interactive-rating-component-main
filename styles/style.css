@@ -127,8 +127,10 @@ body {
   color: var(--White);
 }
 
+/* By using labels for each rating and turning the .grade elements invisible, the circles with the numbers inside them become the effective radio elements */
+
 .grade {
-  /* display: none; */
+  display: none;
 }
 
 form {
