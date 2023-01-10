@@ -107,13 +107,18 @@ body {
   gap: 1rem;
 }
 
-.rating {
-  display: grid;
-  gap: 1rem;
+.pages {
+  position: relative;
   background-color: #1a212b;
   width: 350px;
+  height: 375px;
   padding: 1.5rem;
   border-radius: 1rem;
+}
+
+.rating {
+  display: none;
+  gap: 1rem;
 }
 
 .rating img {
@@ -147,6 +152,16 @@ label {
   text-align: center;
 }
 
+label:hover {
+  background-color: var(--Medium-Grey);
+  color: var(--White);
+  cursor: pointer;
+}
+
+input:checked + label {
+  background-color: var(--Orange);
+}
+
 #sub_button {
   background-color: var(--Orange);
   border: none;
@@ -156,10 +171,46 @@ label {
   margin: auto;
   padding: 0.6875rem;
   border-radius: 2rem;
+  margin-top: 1rem;
+}
+
+#sub_button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+  cursor: pointer;
 }
 
 .thankyou {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  width: 350px;
+}
+
+.thankyou {
+  color: var(--Medium-Grey);
+  text-align: center;
+}
+
+.thankyou h2 {
+  color: var(--White);
+}
+
+.thankyou img {
+  margin: auto;
+}
+
+.thankyou h3 {
+  background-color: #262f38;
+  color: var(--Orange);
+  font-size: 0.8125rem;
+  width: fit-content;
+  place-self: center;
+  padding: .4375rem 0.75rem;
+  border-radius: 1rem;
 }
 
 .attribution {
