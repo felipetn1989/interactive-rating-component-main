@@ -185,6 +185,7 @@ input:checked + label {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
   gap: 1rem;
   padding: 1.75rem 1.5rem;
   width: 350px;
