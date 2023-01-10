@@ -6,6 +6,9 @@ sub_button.addEventListener("click", rating);
 
 let scores = document.getElementsByName("score");
 
+let ratingPage = document.querySelector(".rating");
+let thankyou = document.querySelector(".thankyou");
+
 let selectedIndex;
 
 /* The function verify is a loop that will check which of the invisible radio buttons is selected. The +1 is necessary because the index starts counting at zero and not 1 */
@@ -22,5 +25,7 @@ function verify() {
 
 function rating() {
   verify();
-  alert(selectedIndex);
+  result.innerHTML = `You selected ${selectedIndex} out of 5`;
+  ratingPage.style.display = "none";
+  thankyou.style.display = "grid";
 }

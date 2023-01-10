@@ -110,15 +110,15 @@ body {
 .pages {
   position: relative;
   background-color: #1a212b;
-  width: 350px;
-  height: 375px;
-  padding: 1.5rem;
-  border-radius: 1rem;
+  width: 340px;
+  height: 381px;
+  border-radius: 1.5rem;
 }
 
 .rating {
-  display: none;
+  display: grid;
   gap: 1rem;
+  padding: 1.5rem;
 }
 
 .rating img {
@@ -182,11 +182,11 @@ input:checked + label {
 
 .thankyou {
   position: absolute;
-  top: 0;
-  left: 0;
-  display: grid;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 1.75rem 1.5rem;
   width: 350px;
 }
 
@@ -209,7 +209,7 @@ input:checked + label {
   font-size: 0.8125rem;
   width: fit-content;
   place-self: center;
-  padding: .4375rem 0.75rem;
+  padding: 0.4375rem 0.75rem;
   border-radius: 1rem;
 }
 
@@ -219,4 +219,30 @@ input:checked + label {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 60em) {
+  .pages {
+    width: 420px;
+    height: 430px;
+    padding: 1.25rem;
+  }
+
+  .rating {
+    font-size: 1.125rem;
+    gap: 1.25rem;
+  }
+
+  .rating p {
+    font-size: 1rem;
+  }
+
+  label {
+    width: 50px;
+    height: 50px;
+  }
+
+  #sub_button {
+    width: 100%;
+  }
 }
