@@ -116,7 +116,7 @@ body {
 
 .rating {
   display: grid;
-  gap: .625rem;
+  gap: 0.625rem;
   padding: 1.5rem 1.75rem;
 }
 
@@ -125,7 +125,7 @@ body {
   border-radius: 50%;
   padding: 0.75rem;
   background-color: #262f38;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .rating h1 {
@@ -133,9 +133,8 @@ body {
 }
 
 .rating p {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
-
 
 /* By using labels for each rating and turning the .grade elements invisible, the circles with the numbers inside them become the effective radio elements */
 
@@ -172,7 +171,7 @@ input:checked + label {
   background-color: var(--Orange);
   border: none;
   color: var(--White);
-  letter-spacing: .125rem;
+  letter-spacing: 0.125rem;
   text-transform: uppercase;
   width: 17.25rem;
   margin: auto;
@@ -231,23 +230,27 @@ input:checked + label {
 
 @media screen and (min-width: 60em) {
   .pages {
-    width: 420px;
-    height: 430px;
-    padding: 1.25rem;
+    width: 26rem;
+    padding: 0.75rem 0.4375rem;
   }
 
   .rating {
     font-size: 1.125rem;
-    gap: 1.25rem;
+    gap: 1rem;
   }
 
   .rating p {
-    font-size: 1rem;
+    font-size: 0.9375rem;
+    transform: translateY(-0.9375rem);
   }
 
   label {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+
+  form {
+    margin-top: 0.25rem;
   }
 
   #sub_button {
