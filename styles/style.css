@@ -198,8 +198,11 @@ input:checked + label {
 }
 
 .thankyou {
+  background-color: inherit;
+  border-radius: inherit;
   color: var(--Medium-Grey);
   text-align: center;
+  width: inherit;
 }
 
 .thankyou h2 {
@@ -255,5 +258,9 @@ input:checked + label {
 
   #sub_button {
     width: 100%;
+  }
+
+  .thankyou {
+    width: inherit;
   }
 }
