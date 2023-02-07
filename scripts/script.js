@@ -24,7 +24,6 @@ function verify() {
 /* Every time that i press the submit button, the function verify is called to make sure selectedIndex is always updated. If I don't do this, it will only register the index of the first radio that I select even if I change it later. */
 
 function rating() {
-  verify();
   result.innerHTML = `You selected ${selectedIndex} out of 5`;
   ratingPage.style.display = "none";
   thankyou.style.display = "grid";
