@@ -110,15 +110,14 @@ body {
 .pages {
   position: relative;
   background-color: #1a212b;
-  width: 340px;
-  height: 381px;
+  width: 20.75rem;
   border-radius: 1.5rem;
 }
 
 .rating {
   display: grid;
-  gap: 1rem;
-  padding: 1.5rem;
+  gap: .625rem;
+  padding: 1.5rem 1.75rem;
 }
 
 .rating img {
@@ -126,11 +125,17 @@ body {
   border-radius: 50%;
   padding: 0.75rem;
   background-color: #262f38;
+  margin-bottom: .5rem;
 }
 
 .rating h1 {
   color: var(--White);
 }
+
+.rating p {
+  font-size: .875rem;
+}
+
 
 /* By using labels for each rating and turning the .grade elements invisible, the circles with the numbers inside them become the effective radio elements */
 
@@ -141,14 +146,15 @@ body {
 form {
   display: flex;
   justify-content: space-between;
+  margin-top: 1.375rem;
 }
 
 label {
   background-color: #262f38;
   padding: 0.75rem;
   border-radius: 50%;
-  width: 42px;
-  height: 42px;
+  width: 2.625rem;
+  height: 2.625rem;
   text-align: center;
 }
 
@@ -166,8 +172,9 @@ input:checked + label {
   background-color: var(--Orange);
   border: none;
   color: var(--White);
+  letter-spacing: .125rem;
   text-transform: uppercase;
-  width: 90%;
+  width: 17.25rem;
   margin: auto;
   padding: 0.6875rem;
   border-radius: 2rem;
